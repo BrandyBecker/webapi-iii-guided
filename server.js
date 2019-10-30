@@ -9,7 +9,7 @@ function dateLogger(req,res,next){
   console.log(new Date().toISOString());
   next();
 }
-//----------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------
 //write a middleware function that logs the  HTTP method and the URL visited by the client
 //should log to the console something that looks like this: GET / or GET /api/hubs
 function urlLogger(req, res, next) {
