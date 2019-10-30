@@ -55,12 +55,10 @@ function gateKeeper(req,res,next){
 
 }
 
-
-
 //-------------------------------------------------------------------------------------
 
 //## GLOBAL MIDDLEWARE =============================================================
-server.use(gateKeeper);
+server.use(gateKeeper); //password has to be 'mellon' to pass. empty string or anything else throws an error
 server.use(helmet()); // third-party security middleware
 server.use(morgan('dev')); //third-party method/url/time/status logger middleware
 
